@@ -1,0 +1,17 @@
+
+public static void metodoRec02(int v[], int e, int d) {
+
+int t;
+if (e >= d)
+return;
+else {
+t = v[e];
+v[e] = v[d];
+v[d] = t;
+metodoRec02(v, e + 1, d - 1);
+}
+}
+
+o método serve para aplicar recursividade em 2 valores inteiros, verificando se o inteiro e é maior ou igual ao outro inteiro d , se sim o metodo retorna
+a verificação até o e ser menor que d, se isso é verdade o inteiro t recebe o vetor v na posição de e e em seguida o vetor e recebe ele na posição d, e 
+depois na posição t.
